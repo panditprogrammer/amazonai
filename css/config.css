@@ -1,0 +1,405 @@
+/* Bootstrap v5.3 css override */
+:root {
+    /* cutom color  */
+    --pp-primary: #ff5200;
+    --pp-primaryLight: #e84c04;
+    --pp-blue: #0d6efd;
+    --pp-transparent: #ff520080;
+    /* white  */
+    --pp-white: #ffffff;
+    /* light white */
+    --pp-light: #ECF0F1;
+
+    --pp-gray: #e1e1e1;
+
+    /* black */
+    --pp-black: #202124;
+    /* light black */
+    --pp-dark: #212529;
+
+    --pp-textDark: var(--pp-black);
+    --pp-textLight: #d1d5db;
+    --pp-textWhite: var(--pp-light);
+    /* cutom color ends */
+
+
+    /* bs override  */
+    --bs-blue: var(--pp-blue) !important;
+    --bs-light: var(--pp-light);
+    --bs-white: var(--pp-white);
+    --bs-list-bg: var(--pp-white);
+    --bs-body-bg: var(--pp-white) !important;
+    --bs-border-color: var(--pp-gray) !important;
+    --navbar-height: 60px;
+    --z-index-1: 9;
+    --z-index-2: 99;
+    --z-index-3: 999;
+    --z-index-4: 9999;
+    --z-index-5: 99999;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease-in 0.5s !important;
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* --------------------------------- background and foreground --------------------------------- */
+.bg-dark {
+    background: var(--pp-dark) !important;
+    color: var(--pp-white) !important;
+}
+
+.bg-black {
+    background: var(--pp-black) !important;
+    color: var(--pp-white) !important;
+
+}
+
+.text-white {
+    color: var(--pp-white);
+}
+
+.text-light {
+    color: var(--pp-textLight) !important;
+}
+
+.text-dark {
+    color: var(--pp-textDark) !important;
+}
+
+.bg-light {
+    background: var(--pp-light) !important;
+}
+
+.bg-white {
+    background: var(--pp-white) !important;
+}
+
+/* --------------------------------- background and foreground --------------------------------- */
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--pp-light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--pp-gray);
+    border: 1px solid var(--pp-gray);
+    border-radius: 0.5rem;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--pp-primaryLight);
+}
+
+::placeholder {
+    color: var(--pp-gray) !important;
+}
+
+::selection {
+    background: var(--pp-primaryLight) !important;
+    color: var(--pp-white) !important;
+}
+
+body {
+    background: var(--pp-light) !important;
+}
+
+/* site loader  */
+#siteLoader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: var(--z-index-5) !important;
+    background-color: #0000005c;
+    color: var(--pp-primary) !important;
+
+}
+
+
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+    font-family: 'Krona One', sans-serif !important;
+    font-weight: 600 !important;
+
+}
+
+/* --------------------------------- paragraph and text color  --------------------------------- */
+p,
+ul,
+ol,
+.list-group-item,
+.form-control,
+span:not(div.code-toolbar pre span, .text-primary, .copy-to-clipboard-button span),
+.table,
+strong,
+small,
+.text-dark,
+figcaption,
+::marker {
+    color: currentColor;
+}
+
+
+span {
+    font-family: inherit !important;
+}
+
+/* paragraph and text color ends  */
+
+
+
+/* ----------------------------------- forms and inputs --------------------------------- */
+
+/* navigation menu  */
+.navbar-toggler,
+.form-select,.btn:focus,
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: var(--pp-primary) !important;
+}
+
+/* theme button  */
+.form-switch input.form-check-input {
+    background-color: var(--pp-textDark);
+}
+
+.form-label {
+    color: dimgray !important;
+}
+
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: var(--pp-primary) !important;
+    border-color: var(--pp-primary) !important;
+}
+
+
+.form-check-input:focus {
+    border-color: var(--bs-dark) !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--pp-light-rgb) !important;
+}
+
+.form-range::-webkit-slider-thumb {
+    background: var(--pp-primary) !important;
+
+}
+
+/* ----------------------------------- forms and inputs  ---------------------------------*/
+
+
+
+/* --------------------------------- border color  */
+.card,
+hr {
+    border-color: var(--pp-gray) !important;
+}
+
+/* ---------------------------------  border color ends --------------------------------- */
+
+
+
+/* section css */
+/* .section-bg, */
+.card-pp {
+    background: var(--pp-white) !important;
+    padding: 1rem !important;
+}
+
+.container-lg {
+    max-width: 1400px !important;
+    padding: 0rem !important;
+    margin: auto !important;
+}
+
+.container-fluid {
+    padding: 0rem !important;
+    margin: auto !important;
+}
+
+.row {
+    max-width: 100% !important;
+    margin: auto !important;
+}
+
+
+/* --------------------------------- links,button and anchor  ---------------------------------*/
+
+.bg-primary,
+.btn-primary {
+    background-color: var(--pp-primary) !important;
+    color: var(--pp-white) !important;
+}
+
+.link:hover {
+    color: var(--pp-blue) !important;
+    background: var(--pp-black) !important;
+}
+
+.text-primary,
+.link-primary {
+    color: var(--pp-primary) !important;
+}
+
+.link-primary {
+    color: var(--pp-primary) !important;
+}
+
+.link-primary:hover,
+.link-blue:hover {
+    text-decoration: underline !important;
+    color: var(--pp-textDark) !important;
+}
+
+.link-blue {
+    color: var(--pp-blue) !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: var(--pp-textDark) !important;
+}
+
+/* ---------------------------------  links,buttons and anchor ends ---------------------------------*/
+
+
+/* --------------------------------- active and disable ---------------------------------  */
+
+.active:not(.tab-pane, .nav-link) {
+    background-color: var(--pp-primary) !important;
+    color: var(--pp-white) !important;
+}
+
+.dropdown-item:active {
+    background-color: var(--pp-primary) !important;
+    color: var(--pp-white) !important;
+}
+
+.list-group-item.active,
+.active>.page-link {
+    background-color: var(--pp-primary) !important;
+    border-color: var(--pp-primary) !important;
+    color: var(--pp-white) !important;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--pp-primary);
+    cursor: pointer;
+}
+
+.btn {
+    border-style: none !important;
+}
+
+.border-primary {
+    border-color: var(--pp-primary) !important;
+}
+
+/* ---------------------------- animations and transitions ---------------------------- */
+
+/* --------- glow effect ---------  */
+.glow-on-hover {
+    border: 2px solid var(--pp-white);
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    color: var(--pp-textLight) !important;
+    display: inline-block;
+
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, var(--pp-dark), #00ff00, #0021c5, #7a00ff, #000000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 30s alternate infinite;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: inherit;
+}
+
+/* .glow-on-hover:after {
+    background: transparent !important;
+} */
+
+.glow-on-hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.glow-on-hover:hover {
+    animation-play-state: paused !important;
+}
+
+/* --------- glow effect ends ---------  */

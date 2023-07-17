@@ -1,0 +1,21 @@
+@import url("config.css");
+
+.bg-dark-1 {
+    background: #0F1111 !important;
+}
+
+.bg-dark-2 {
+    background: #232f3d !important;
+}
+
+.header-nav .nav-link {
+    line-height: 0.8rem;
+    font-size: 0.85rem;
+    color: white !important;
+}
+
+
+/* index page poster section  */
+.cs-poster{
+    background: linear-gradient(#ffffff00,white);
+}

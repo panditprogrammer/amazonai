@@ -8,6 +8,14 @@
     background: #232f3d !important;
 }
 
+.bg-dark-3{
+    background: #37475a !important;
+}
+
+.bg-dark-4{
+    background: #131A22 !important;
+}
+
 .header-nav .nav-link {
     line-height: 0.8rem;
     font-size: 0.85rem;

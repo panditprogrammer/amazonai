@@ -237,20 +237,16 @@ hr {
 
 /* section css */
 /* .section-bg, */
-.card-pp {
-    background: var(--pp-white) !important;
-    padding: 1rem !important;
-}
 
 .container-lg {
     max-width: 1400px !important;
-    padding: 0rem !important;
-    margin: auto !important;
+    /* padding: 0rem !important; */
+    /* margin: 0rem auto !important; */
 }
 
 .container-fluid {
-    padding: 0rem !important;
-    margin: auto !important;
+    /* padding: 0rem !important; */
+    /* margin: auto !important; */
 }
 
 .row {
@@ -333,6 +329,17 @@ a {
 .border-primary {
     border-color: var(--pp-primary) !important;
 }
+
+
+/*---------------------------------- negative margin padding 0----------------------------  */
+.mt-n5{
+    margin-top: -3rem !important;
+}
+
+.mt-nx5{
+    margin-top: -5rem !important;
+}
+
 
 /* ---------------------------- animations and transitions ---------------------------- */
 

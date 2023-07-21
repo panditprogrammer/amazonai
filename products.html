@@ -177,12 +177,13 @@
         </div>
     </div>
 
+    <!-- list Products -->
     <div class="bg-white">
         <div class="container-lg py-4">
 
-            <div class="row">
+            <div class="row position-relative">
                 <!-- filter section -->
-                <div class="col-lg-3 col-md-3 col-12">
+                <div class="col-lg-3 col-md-3 col-12 bg-white" id="js-sidebar-filter">
                     <div class="mb-2">
                         <h2 class="h6 py-2">Brands</h1>
                             <div class="list-group">
@@ -208,7 +209,6 @@
                                 </label>
                             </div>
                     </div>
-
                     <div class="mb-2">
                         <h2 class="h6 py-2">Types</h1>
                             <div class="list-group">
@@ -265,196 +265,100 @@
 
                 <!-- Products section  -->
                 <div class="col-lg-9 col-md-9 col-12">
-                    <div class="py-2">
-                        <h1 class="h4">Results</h1>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1 class="h4 pt-2">Results</h1> <button class="btn btn-sm btn-light"
+                            id="js-toggle-filter">Filter</button>
                     </div>
                     <div class="card mb-3">
                         <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
+                            <div class="col-4 p-2 d-flex justify-content-center align-items-center">
                                 <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
                                     class="img-fluid rounded-start" alt="">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <h2 class="h5 card-title fw-normal">
+                                        <a href="product-detail.html" class="link-primary" target="_blank">Lava Hero
+                                            600i (Blue Green)
+                                            with Sleek and Stylish Design, 10 Regional Languages Input Support, Auto
+                                            Call Recording, Wireless FM with Recording and 32 GB Expandable Storage</a>
+                                    </h2>
+
+                                    <small class="d-block card-text text-warning"> &starf; &starf; &starf; &starf;
+                                        &star; 722 </small>
+
+                                    <h6 class="d-inline-block card-text m-1 ms-0">Rs. 990.00 </h6>
+
+                                    <p class="d-inline-block card-text text-muted small my-0">
+                                        M.R.P. Rs. <span class="text-decoration-line-through">1899</span> (40% off)
+                                    </p>
+
+                                    <small class="d-block card-text text-muted">FREE Delivery</small>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="card mb-3">
                         <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
-                                <img src="https://m.media-amazon.com/images/I/41zrcMz52FL._SX300_SY300_QL70_FMwebp_.jpg"
-                                    class="img-fluid rounded-start" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
-                                <img src="https://m.media-amazon.com/images/I/41zrcMz52FL._SX300_SY300_QL70_FMwebp_.jpg"
-                                    class="img-fluid rounded-start" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
+                            <div class="col-4 p-2 d-flex justify-content-center align-items-center">
                                 <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
                                     class="img-fluid rounded-start" alt="">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <h2 class="h5 card-title fw-normal">
+                                        <a href="product-detail.html" class="link-primary" target="_blank">Lava Hero
+                                            600i (Blue Green)
+                                            with Sleek and Stylish Design, 10 Regional Languages Input Support, Auto
+                                            Call Recording, Wireless FM with Recording and 32 GB Expandable Storage</a>
+                                    </h2>
+
+                                    <small class="d-block card-text text-warning"> &starf; &starf; &starf; &starf;
+                                        &star; 722 </small>
+
+                                    <h6 class="d-inline-block card-text m-1 ms-0">Rs. 990.00 </h6>
+
+                                    <p class="d-inline-block card-text text-muted small my-0">
+                                        M.R.P. Rs. <span class="text-decoration-line-through">1899</span> (40% off)
+                                    </p>
+
+                                    <small class="d-block card-text text-muted">FREE Delivery</small>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="card mb-3">
                         <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
+                            <div class="col-4 p-2 d-flex justify-content-center align-items-center">
                                 <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
                                     class="img-fluid rounded-start" alt="">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <h2 class="h5 card-title fw-normal">
+                                        <a href="product-detail.html" class="link-primary" target="_blank">Lava Hero
+                                            600i (Blue Green)
+                                            with Sleek and Stylish Design, 10 Regional Languages Input Support, Auto
+                                            Call Recording, Wireless FM with Recording and 32 GB Expandable Storage</a>
+                                    </h2>
+
+                                    <small class="d-block card-text text-warning"> &starf; &starf; &starf; &starf;
+                                        &star; 722 </small>
+
+                                    <h6 class="d-inline-block card-text m-1 ms-0">Rs. 990.00 </h6>
+
+                                    <p class="d-inline-block card-text text-muted small my-0">
+                                        M.R.P. Rs. <span class="text-decoration-line-through">1899</span> (40% off)
+                                    </p>
+
+                                    <small class="d-block card-text text-muted">FREE Delivery</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
-                                <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
-                                    class="img-fluid rounded-start" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
-                                <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
-                                    class="img-fluid rounded-start" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
-                                <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
-                                    class="img-fluid rounded-start" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
-                                <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
-                                    class="img-fluid rounded-start" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
-                                <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
-                                    class="img-fluid rounded-start" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 p-2 d-flex justify-content-center align-items-center">
-                                <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
-                                    class="img-fluid rounded-start" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
@@ -546,6 +450,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.2.0/dist/js/coreui.bundle.min.js"
         integrity="sha384-n0qOYeB4ohUPebL1M9qb/hfYkTp4lvnZM6U6phkRofqsMzK29IdkBJPegsyfj/r4" crossorigin="anonymous">
         </script>
+
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

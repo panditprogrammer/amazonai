@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Option 1: CoreUI for Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.2.0/dist/css/coreui.min.css" rel="stylesheet"
+        integrity="sha384-UkVD+zxJKGsZP3s/JuRzapi4dQrDDuEf/kHphzg8P3v8wuQ6m9RLjTkPGeFcglQU" crossorigin="anonymous">
+
+    <!-- font awesome icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Products | AmazonAI</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header navbar bg-dark-1 border border-0">
+        <ul class="header-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link navbar-brand me-0">
+                    <img src="https://www.nicepng.com/png/full/16-167642_amazon-logo-amazon-logo-white-text.png"
+                        height="25px" class="" alt="logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-start"> <span class="ps-3"> Hello</span> <br> <i
+                        class="fa-solid fa-location-dot"></i> select your address
+                </a>
+            </li>
+        </ul>
+        <form class="flex-fill px-2">
+            <div class="input-group">
+                <button class="btn btn-light dropdown-toggle" type="button" data-coreui-toggle="dropdown"
+                    aria-expanded="false">All</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-warning" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </form>
+        <ul class="header-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+                    data-coreui-toggle="dropdown" aria-expanded="false">
+                    En
+                </a>
+                <div class="dropdown-menu" aria-labelledby="langDropdown">
+                    <a class="dropdown-item" href="#">India</a>
+                    <a class="dropdown-item" href="#">US</a>
+                    <a class="dropdown-item" href="#">Canada</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
+                    data-coreui-toggle="dropdown" aria-expanded="false">
+                    Hello, Sign in <br>
+                    <strong>Account & Lists</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                    <a class="dropdown-item" href="#">India</a>
+                    <a class="dropdown-item" href="#">US</a>
+                    <a class="dropdown-item" href="#">Canada</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Returns <br> & Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link position-relative" href="#"> <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    <sub>Cart</sub>
+                    <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning text-dark">
+                        9
+                        <span class="visually-hidden">Cart Items</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+
+    <!-- header Categories -->
+    <div class="container-fluid bg-dark-2 text-center text-white">
+        <div class="row row-cols-auto align-items-center">
+            <div class="col">
+                <button class="btn text-white" type="button" data-coreui-toggle="offcanvas"
+                    data-coreui-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    <i class="fa-solid fa-bars"></i> All
+                </button>
+            </div>
+
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Hello</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+        </div>
+    </div>
+
+    <!--   sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="bg-dark-2 offcanvas-header text-white">
+            <h5 class="offcanvas-title" id="staticBackdropLabel"> <i class="fa fa-user-circle"></i> Hello, Sign in
+            </h5>
+            <button type="button" class="btn btn-outline-light" data-coreui-dismiss="offcanvas" aria-label="Close">
+                <i class="fa fa-xmark"></i> </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item border-0">
+                    <h6 class="me-2">Trending</h6>
+                </li>
+                <li class="list-group-item border-0">An item</li>
+                <li class="list-group-item border-0">A second item</li>
+                <li class="list-group-item border-0">A third item</li>
+                <li class="list-group-item border-0">A fourth item</li>
+                <li class="list-group-item border-0">And a fifth one</li>
+                <hr class="hr">
+                <li class="list-group-item border-0">
+                    <h6 class="me-2">Categories</h6>
+                </li>
+                <li class="list-group-item border-0">An item</li>
+                <li class="list-group-item border-0">A second item</li>
+                <li class="list-group-item border-0">A third item</li>
+                <li class="list-group-item border-0">A fourth item</li>
+                <li class="list-group-item border-0">And a fifth one</li>
+                <hr class="hr">
+                <li class="list-group-item border-0">
+                    <h6 class="me-2">Digital Products</h6>
+                </li>
+                <li class="list-group-item border-0">An item</li>
+                <li class="list-group-item border-0">A second item</li>
+                <li class="list-group-item border-0">A third item</li>
+                <li class="list-group-item border-0">A fourth item</li>
+                <li class="list-group-item border-0">And a fifth one</li>
+                <hr class="hr">
+                <li class="list-group-item border-0">
+                    <h6 class="me-2">Daily Essentials</h6>
+                </li>
+                <li class="list-group-item border-0">An item</li>
+                <li class="list-group-item border-0">A second item</li>
+                <li class="list-group-item border-0">A third item</li>
+                <li class="list-group-item border-0">A fourth item</li>
+                <li class="list-group-item border-0">And a fifth one</li>
+                <hr class="hr">
+                <li class="list-group-item border-0">
+                    <h6 class="me-2">Help & Settings</h6>
+                </li>
+                <li class="list-group-item border-0">Your Account</li>
+                <li class="list-group-item border-0">Sign in </li>
+                <li class="list-group-item border-0">Customer Service</li>
+                <li class="list-group-item border-0">Feedbacks</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-lg my-4">
+        <div class="row gx-4">
+            <div class="col-5 px-0">
+                <div class="d-flex justify-content-between">
+                    <div style="width: 80px;">
+                        <img src="https://m.media-amazon.com/images/I/51eGaaoQ1mL._SX38_SY50_CR,0,0,38,50_.jpg"
+                            class="img-thumbnail my-1" alt="product-thumbnail" srcset="">
+                        <img src="https://m.media-amazon.com/images/I/51eGaaoQ1mL._SX38_SY50_CR,0,0,38,50_.jpg"
+                            class="img-thumbnail my-1" alt="product-thumbnail" srcset="">
+                        <img src="https://m.media-amazon.com/images/I/51eGaaoQ1mL._SX38_SY50_CR,0,0,38,50_.jpg"
+                            class="img-thumbnail my-1" alt="product-thumbnail" srcset="">
+                        <img src="https://m.media-amazon.com/images/I/51eGaaoQ1mL._SX38_SY50_CR,0,0,38,50_.jpg"
+                            class="img-thumbnail my-1" alt="product-thumbnail" srcset="">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/81UELPDjLUL._SX679_.jpg" class="img-fluid p-4"
+                            alt="product details">
+                    </div>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="d-flex justify-content-between">
+                    <div class="w-75 px-2">
+                        <h1 class="h6">Lava Hero 600i (Blue Green)with Sleek and Stylish Design, 10 Regional Languages
+                            Input
+                            Support, AutoCall Recording, Wireless FM with Recording and 32 GB Expandable Storage</h1>
+
+                        <small class="d-block card-text text-warning"> &starf; &starf; &starf; &starf;
+                            &star; 722 </small>
+
+                        <h6 class="d-inline-block card-text m-1 ms-0">Rs. 990.00 </h6>
+
+                        <p class="d-inline-block card-text text-muted small my-0">
+                            M.R.P. Rs. <span class="text-decoration-line-through">1899</span> (40% off)
+                        </p>
+
+                        <p class="my-0 text-success">In Stock</p>
+
+                        <hr>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <div class="d-flex flex-column justify-content-center align-items-center"
+                                title="FREE Shipping">
+                                <img src="images/static/icon_free_shipping.png" alt="free shipping" style="width: 2rem;"
+                                    srcset="">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center"
+                                title="Cash on Delivery">
+                                <img src="images/static/icon-COD.png" alt="Cash on Delivery" style="width: 2rem;"
+                                    srcset="">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center"
+                                title="1 Year warranty">
+                                <img src="images/static/icon-warranty.png" alt="warranty" style="width: 2rem;"
+                                    srcset="">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center"
+                                title="7 Days Replacement">
+                                <img src="images/static/icon-returns.png" alt="return & replacement"
+                                    style="width: 2rem;" srcset="">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center" title="100%">
+                                <img src="images/static/Secure-payment.png" alt="Secure-payment" style="width: 2rem;"
+                                    srcset="">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="product-description my-4">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias repellat, fugiat, libero
+                                iusto optio ipsum amet omnis reprehenderit molestias aspernatur exercitationem nostrum.
+                                Minima labore doloribus cum modi maiores beatae a?
+                            </p>
+                            <ul class="list-group list-group-flush border-0">
+                                <li class="list-group-item">list 1</li>
+                                <li class="list-group-item">list 1</li>
+                                <li class="list-group-item">list 1</li>
+                                <li class="list-group-item">list 1</li>
+                            </ul>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ab excepturi, corporis
+                                error, hic provident libero blanditiis dolores aspernatur laboriosam et assumenda quas
+                                nemo consequuntur deleniti. Exercitationem in aliquid pariatur! Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Quia assumenda optio fugiat possimus dolor nisi ea
+                                harum dolores aperiam non? Corrupti quos deleniti ipsa laudantium commodi, rem dicta
+                                molestias sequi.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ab excepturi, corporis
+                                error, hic provident libero blanditiis dolores aspernatur laboriosam et assumenda quas
+                                nemo consequuntur deleniti. Exercitationem in aliquid pariatur! Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Quia assumenda optio fugiat possimus dolor nisi ea
+                                harum dolores aperiam non? Corrupti quos deleniti ipsa laudantium commodi, rem dicta
+                                molestias sequi.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="w-25">
+                        <div class="border rounded p-2">
+                            <p class="small"> <span class="text-info">FREE Delivery</span> <strong>24 May</strong> </p>
+
+                            <div>
+                                <p class="my-0">Get Premium Delivery Facilities </p>
+
+                                <p class="small">Fasted Delivery <strong>22 May</strong>, Order within <span
+                                        class="text-info">15 hours</span>
+                                </p>
+                            </div>
+
+                            <div class="my-2">
+                                <a href="#" class="text-info">
+                                    <i class="fa-solid fa-location-dot"></i> select your location
+                                </a>
+                            </div>
+
+                            <div>
+                                <p class="small my-2 text-dark"> Sold By <a href="#"
+                                        class="link-secondary">XYGelectronics</a> </p>
+                                <button class="btn-sm btn-hover-warning my-1 w-100">Add To Cart</button>
+                                <button class="btn btn-sm btn-warning my-1 w-100">Buy Now</button>
+                            </div>
+                            <div class="my-2">
+                                <a href="#" class="small text-info">
+                                    <i class="fa-solid fa-lock small"></i> Secure transactions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- product related info  -->
+    <div class="container-lg">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-coreui-toggle="tab"
+                    data-coreui-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                    aria-selected="true">Description</button>
+                <button class="nav-link" id="nav-reviews-tab" data-coreui-toggle="tab" data-coreui-target="#nav-reviews"
+                    type="button" role="tab" aria-controls="nav-reviews" aria-selected="false">Reviews</button>
+                <button class="nav-link" id="nav-contact-tab" data-coreui-toggle="tab" data-coreui-target="#nav-contact"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Seller</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <!-- product Description  -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+
+                <div class="p-2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, asperiores aut minima culpa
+                        facere autem praesentium dolorem nesciunt molestiae consequuntur similique, voluptatum saepe.
+                        Sed ipsa, architecto praesentium aspernatur sapiente quam!</p>
+
+                    <h3>Technical Specifications </h3>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <th>Mark</th>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <th>RAM</th>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <th>Storage</th>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <th>Display</th>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <th>Processor</th>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <th>Battery</th>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <th>warranty</th>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <th>Color</th>
+                                <td>Thornton</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- customer reviews section  -->
+            <div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab" tabindex="0">
+                <div class="p-2">
+                    <h3 class="my-2">Customer's Reviews</h3>
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+
+                            <div class="progress-group mb-1">
+                                <span class="text-medium-emphasis small">
+                                    5 &starf;
+                                </span>
+                                <div class="progress-group-bars mx-2">
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <span class="ms-auto text-medium-emphasis small">50%</span>
+                            </div>
+                            <div class="progress-group mb-1">
+                                <span class="text-medium-emphasis small">
+                                    4 &starf;
+                                </span>
+                                <div class="progress-group-bars mx-2">
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%"
+                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <span class="ms-auto text-medium-emphasis small">10%</span>
+                            </div>
+                            <div class="progress-group mb-1">
+                                <span class="text-medium-emphasis small">
+                                    3 &starf;
+                                </span>
+                                <div class="progress-group-bars mx-2">
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <span class="ms-auto text-medium-emphasis small">30%</span>
+                            </div>
+                            <div class="progress-group mb-1">
+                                <span class="text-medium-emphasis small">
+                                    2 &starf;
+                                </span>
+                                <div class="progress-group-bars mx-2">
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 8%"
+                                            aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <span class="ms-aut text-medium-emphasis smallo">8%</span>
+                            </div>
+                            <div class="progress-group mb-1">
+                                <span class="text-medium-emphasis small">
+                                    1 &starf;
+                                </span>
+                                <div class="progress-group-bars mx-2">
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 2%"
+                                            aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <span class="ms-aut text-medium-emphasis smallo">2%</span>
+                            </div>
+
+
+                            <div class="my-4">
+                                <h6>Review this product</h6>
+                                <p>Share your thoughts with other customers</p>
+                                <button class="btn btn-sm btn-light w-100">Write a product review</button>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-8 col-sm-12">
+
+                            <div class="my-4">
+                                <p class="text-secondary my-0"><i class="fa fa-user-circle"></i> Someone </p>
+
+                                <p class="small">
+                                    <span class="text-warning"> &starf; &starf; &starf; &starf; &star;</span>
+                                    <strong>Phone Phone Case is not Included</strong>
+                                </p>
+                                <p class="my-0 text-secondary">Reviews in 14 jan 2022</p>
+
+                                <p>I could not receive phone cover. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit.
+                                    Culpa, praesentium, illum dolorem omnis, ex eligendi soluta aut ratione vero
+                                    repellat
+                                    officiis dolor animi ipsam tempora rem aliquam. Nostrum, ad voluptatum!
+                                </p>
+
+                                <button class="btn btn-sm btn-light">Helpful</button>
+                                <button class="btn btn-sm btn-white">Report</button>
+                            </div>
+
+                            <div class="my-4">
+                                <p class="text-secondary my-0"><i class="fa fa-user-circle"></i> Someone </p>
+
+                                <p class="small">
+                                    <span class="text-warning"> &starf; &starf; &starf; &starf; &star;</span>
+                                    <strong>Phone Phone Case is not Included</strong>
+                                </p>
+                                <p class="my-0 text-secondary">Reviews in 14 jan 2022</p>
+
+                                <p>I could not receive phone cover. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit.
+                                    Culpa, praesentium, illum dolorem omnis, ex eligendi soluta aut ratione vero
+                                    repellat
+                                    officiis dolor animi ipsam tempora rem aliquam. Nostrum, ad voluptatum!
+                                </p>
+
+                                <button class="btn btn-sm btn-light">Helpful</button>
+                                <button class="btn btn-sm btn-white">Report</button>
+                            </div>
+
+                            <div class="my-4">
+                                <p class="text-secondary my-0"><i class="fa fa-user-circle"></i> Someone </p>
+
+                                <p class="small">
+                                    <span class="text-warning"> &starf; &starf; &starf; &starf; &star;</span>
+                                    <strong>Phone Phone Case is not Included</strong>
+                                </p>
+                                <p class="my-0 text-secondary">Reviews in 14 jan 2022</p>
+
+                                <p>I could not receive phone cover. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit.
+                                    Culpa, praesentium, illum dolorem omnis, ex eligendi soluta aut ratione vero
+                                    repellat
+                                    officiis dolor animi ipsam tempora rem aliquam. Nostrum, ad voluptatum!
+                                </p>
+
+                                <button class="btn btn-sm btn-light">Helpful</button>
+                                <button class="btn btn-sm btn-white">Report</button>
+                            </div>
+
+                            <div class="my-4">
+                                <p class="text-secondary my-0"><i class="fa fa-user-circle"></i> Someone </p>
+
+                                <p class="small">
+                                    <span class="text-warning"> &starf; &starf; &starf; &starf; &star;</span>
+                                    <strong>Phone Phone Case is not Included</strong>
+                                </p>
+                                <p class="my-0 text-secondary">Reviews in 14 jan 2022</p>
+
+                                <p>I could not receive phone cover. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit.
+                                    Culpa, praesentium, illum dolorem omnis, ex eligendi soluta aut ratione vero
+                                    repellat
+                                    officiis dolor animi ipsam tempora rem aliquam. Nostrum, ad voluptatum!
+                                </p>
+
+                                <button class="btn btn-sm btn-light">Helpful</button>
+                                <button class="btn btn-sm btn-white">Report</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- seller info  -->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                Home tab is contact
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- from browsing history  -->
+    <div class="container-lg my-4">
+        <h3 class="my-2">From your browsing history</h3>
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/ACQ/PC_QuadCard_186X116-3._SY116_CB616375594_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/ACQ/PC_QuadCard_186X116-3._SY116_CB616375594_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/ACQ/PC_QuadCard_186X116-3._SY116_CB616375594_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/ACQ/PC_QuadCard_186X116-3._SY116_CB616375594_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer section  -->
+
+    <div class="container-fluid bg-dark-2 mt-4 px-0">
+        <div class="w-100 text-center bg-dark-3">
+            <a href="#" class="text-white py-2 d-block">Back to top</a>
+        </div>
+
+        <footer class="container-lg bg-dark-2 border-0 text-white py-4">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <div class="col">
+                    <h6 class="py-1">Get to Know us</h6>
+                    <a href="#" class="list-group-item link-light">About us</a>
+                    <a href="#" class="list-group-item link-light">Career</a>
+                    <a href="#" class="list-group-item link-light">Press Releases</a>
+                    <a href="#" class="list-group-item link-light">AmazonAI Science</a>
+                </div>
+                <div class="col">
+                    <h6 class="py-1">Connect with us</h6>
+                    <a href="#" class="list-group-item link-light">Facebook </a>
+                    <a href="#" class="list-group-item link-light">Twitter</a>
+                    <a href="#" class="list-group-item link-light">Instagram</a>
+                </div>
+                <div class="col">
+                    <h6 class="py-1">make money with us</h6>
+                    <a href="#" class="list-group-item link-light">Sell on AmazonAI</a>
+                    <a href="#" class="list-group-item link-light">Protect and build your Brand</a>
+                    <a href="#" class="list-group-item link-light">Become an Affliate</a>
+                    <a href="#" class="list-group-item link-light">Advertise your Products</a>
+                </div>
+                <div class="col">
+                    <h6 class="py-1">Let us help you</h6>
+                    <a href="#" class="list-group-item link-light">Your Account</a>
+                    <a href="#" class="list-group-item link-light">Return Center</a>
+                    <a href="#" class="list-group-item link-light">100% Purchase Protection</a>
+                    <a href="#" class="list-group-item link-light">Help</a>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <div class="bg-dark-4 py-4 text-secondary mt-4">
+            <div class="text-center">
+                <a href="#" class="link-secondary p-2">Conditions of Use & Sale</a>
+                <a href="#" class="link-secondary p-2">Privacy Notice</a>
+                <a href="#" class="link-secondary p-2">Interest-Based Ads</a>
+            </div>
+            <div class="text-center py-2 ">
+                <p>&copy; All Rights Reserved 2023. AmazonAI or it's affliates</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Option 1: CoreUI for Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.2.0/dist/js/coreui.bundle.min.js"
+        integrity="sha384-n0qOYeB4ohUPebL1M9qb/hfYkTp4lvnZM6U6phkRofqsMzK29IdkBJPegsyfj/r4" crossorigin="anonymous">
+        </script>
+
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

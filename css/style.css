@@ -27,3 +27,23 @@
 .cs-poster{
     background: linear-gradient(#ffffff00,white);
 }
+
+#js-toggle-filter{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    #js-toggle-filter{
+        display: block;
+    }
+    
+    #js-sidebar-filter{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        z-index: 99;
+        border: 1px solid gray;
+    }
+    
+}

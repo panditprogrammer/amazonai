@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Option 1: CoreUI for Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.2.0/dist/css/coreui.min.css" rel="stylesheet"
+        integrity="sha384-UkVD+zxJKGsZP3s/JuRzapi4dQrDDuEf/kHphzg8P3v8wuQ6m9RLjTkPGeFcglQU" crossorigin="anonymous">
+
+    <!-- font awesome icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Products | AmazonAI</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+
+
+    <header class="header navbar bg-dark-1 border border-0">
+        <ul class="header-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link navbar-brand me-0">
+                    <img src="https://www.nicepng.com/png/full/16-167642_amazon-logo-amazon-logo-white-text.png"
+                        height="25px" class="" alt="logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-start"> <span class="ps-3"> Hello</span> <br> <i
+                        class="fa-solid fa-location-dot"></i> select your address
+                </a>
+            </li>
+        </ul>
+        <form class="flex-fill px-2">
+            <div class="input-group">
+                <button class="btn btn-light dropdown-toggle" type="button" data-coreui-toggle="dropdown"
+                    aria-expanded="false">All</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-warning" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </form>
+        <ul class="header-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+                    data-coreui-toggle="dropdown" aria-expanded="false">
+                    En
+                </a>
+                <div class="dropdown-menu" aria-labelledby="langDropdown">
+                    <a class="dropdown-item" href="#">India</a>
+                    <a class="dropdown-item" href="#">US</a>
+                    <a class="dropdown-item" href="#">Canada</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
+                    data-coreui-toggle="dropdown" aria-expanded="false">
+                    Hello, Sign in <br>
+                    <strong>Account & Lists</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                    <a class="dropdown-item" href="#">India</a>
+                    <a class="dropdown-item" href="#">US</a>
+                    <a class="dropdown-item" href="#">Canada</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Returns <br> & Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link position-relative" href="#"> <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    <sub>Cart</sub>
+                    <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning text-dark">
+                        9
+                        <span class="visually-hidden">Cart Items</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+
+    <!-- header Categories -->
+    <div class="container-fluid bg-dark-2 text-center text-white">
+        <div class="row row-cols-auto align-items-center">
+            <div class="col">
+                <button class="btn text-white" type="button" data-coreui-toggle="offcanvas"
+                    data-coreui-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    <i class="fa-solid fa-bars"></i> All
+                </button>
+            </div>
+
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Hello</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+        </div>
+    </div>
+
+    <!--   sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="bg-dark-2 offcanvas-header text-white">
+            <h5 class="offcanvas-title" id="staticBackdropLabel"> <i class="fa fa-user-circle"></i> Hello, Sign in
+            </h5>
+            <button type="button" class="btn btn-outline-light" data-coreui-dismiss="offcanvas" aria-label="Close">
+                <i class="fa fa-xmark"></i> </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item border-0">
+                    <h6 class="me-2">Trending</h6>
+                </li>
+                <li class="list-group-item border-0">An item</li>
+                <li class="list-group-item border-0">A second item</li>
+                <li class="list-group-item border-0">A third item</li>
+                <li class="list-group-item border-0">A fourth item</li>
+                <li class="list-group-item border-0">And a fifth one</li>
+                <hr class="hr">
+                <li class="list-group-item border-0">
+                    <h6 class="me-2">Categories</h6>
+                </li>
+                <li class="list-group-item border-0">An item</li>
+                <li class="list-group-item border-0">A second item</li>
+                <li class="list-group-item border-0">A third item</li>
+                <li class="list-group-item border-0">A fourth item</li>
+                <li class="list-group-item border-0">And a fifth one</li>
+                <hr class="hr">
+                <li class="list-group-item border-0">
+                    <h6 class="me-2">Digital Products</h6>
+                </li>
+                <li class="list-group-item border-0">An item</li>
+                <li class="list-group-item border-0">A second item</li>
+                <li class="list-group-item border-0">A third item</li>
+                <li class="list-group-item border-0">A fourth item</li>
+                <li class="list-group-item border-0">And a fifth one</li>
+                <hr class="hr">
+                <li class="list-group-item border-0">
+                    <h6 class="me-2">Daily Essentials</h6>
+                </li>
+                <li class="list-group-item border-0">An item</li>
+                <li class="list-group-item border-0">A second item</li>
+                <li class="list-group-item border-0">A third item</li>
+                <li class="list-group-item border-0">A fourth item</li>
+                <li class="list-group-item border-0">And a fifth one</li>
+                <hr class="hr">
+                <li class="list-group-item border-0">
+                    <h6 class="me-2">Help & Settings</h6>
+                </li>
+                <li class="list-group-item border-0">Your Account</li>
+                <li class="list-group-item border-0">Sign in </li>
+                <li class="list-group-item border-0">Customer Service</li>
+                <li class="list-group-item border-0">Feedbacks</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-lg my-4">
+        <div class="row g-4">
+
+            <div class="col-lg-9 col-md-9 col-sm-12">
+
+                <div class="card p-2 border-0">
+                    <h1 class="h5 pt-3">Shopping Cart</h1>
+                    <hr>
+
+                    <div class="mb-4">
+                        <div class="row gx-4 border-bottom">
+                            <div class="col-2 p-2 d-flex justify-content-center align-items-start">
+                                <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <div class="col-10">
+                                <div>
+                                    <h2 class="h5 fw-normal">
+                                        <a href="product-detail.html" class="link-primary" target="_blank">Lava Hero
+                                            600i (Blue Green)
+                                            with Sleek and Stylish Design, 10 Regional Languages Input Support, Auto
+                                            Call Recording, Wireless FM with Recording and 32 GB Expandable Storage</a>
+                                    </h2>
+
+                                    <h6 class="d-inline-block card-text m-1 ms-0">Rs. 990.00 </h6>
+
+                                    <small class="d-block card-text text-success">In Stock </small>
+
+                                    <div class="my-1 d-flex justify-content-start align-items-center">
+                                        <div>
+                                            <label for="quantity" class="form-label">Quantity</label>
+                                        </div>
+                                        <div class="input-group mx-2 w-25">
+                                            <input type="number" name="quantity" value="1" min="1" max="10"
+                                                class="form-control form-control-sm" id="quantity">
+                                            <button type="submit" class="btn btn-light">Update</button>
+                                        </div>
+
+                                        <div class="ms-4">
+                                            <button class="btn btn-sm btn-outline-danger">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <p>Subtotal (1 item) Rs. <strong>12999.00</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="row gx-4 border-bottom">
+                            <div class="col-2 p-2 d-flex justify-content-center align-items-start">
+                                <img src="https://m.media-amazon.com/images/I/61NnM1kR5cL._AC_UY218_.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <div class="col-10">
+                                <div>
+                                    <h2 class="h5 fw-normal">
+                                        <a href="product-detail.html" class="link-primary" target="_blank">Lava Hero
+                                            600i (Blue Green)
+                                            with Sleek and Stylish Design, 10 Regional Languages Input Support, Auto
+                                            Call Recording, Wireless FM with Recording and 32 GB Expandable Storage</a>
+                                    </h2>
+
+                                    <h6 class="d-inline-block card-text m-1 ms-0">Rs. 990.00 </h6>
+
+                                    <small class="d-block card-text text-success">In Stock </small>
+
+                                    <div class="my-1 d-flex justify-content-start align-items-center">
+                                        <div>
+                                            <label for="quantity" class="form-label">Quantity</label>
+                                        </div>
+                                        <div class="input-group mx-2 w-25">
+                                            <input type="number" name="quantity" value="1" min="1" max="10"
+                                                class="form-control form-control-sm" id="quantity">
+                                            <button type="submit" class="btn btn-light">Update</button>
+                                        </div>
+
+                                        <div class="ms-4">
+                                            <button class="btn btn-sm btn-outline-danger">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <p>Subtotal (1 item) Rs. <strong>12999.00</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="card p-4">
+                    <p class="text-success">Your Order is Eligible for FREE Delivery</p>
+                    <p>Total (3 Items) : Rs. 33499.00</p>
+                    <button class="btn btn-sm btn-warning my-1 w-100">Proceed to Buy</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer section  -->
+
+    <div class="container-fluid bg-dark-2 mt-4 px-0">
+        <div class="w-100 text-center bg-dark-3">
+            <a href="#" class="text-white py-2 d-block">Back to top</a>
+        </div>
+
+        <footer class="container-lg bg-dark-2 border-0 text-white py-4">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                <div class="col">
+                    <h6 class="py-1">Get to Know us</h6>
+                    <a href="#" class="list-group-item link-light">About us</a>
+                    <a href="#" class="list-group-item link-light">Career</a>
+                    <a href="#" class="list-group-item link-light">Press Releases</a>
+                    <a href="#" class="list-group-item link-light">AmazonAI Science</a>
+                </div>
+                <div class="col">
+                    <h6 class="py-1">Connect with us</h6>
+                    <a href="#" class="list-group-item link-light">Facebook </a>
+                    <a href="#" class="list-group-item link-light">Twitter</a>
+                    <a href="#" class="list-group-item link-light">Instagram</a>
+                </div>
+                <div class="col">
+                    <h6 class="py-1">make money with us</h6>
+                    <a href="#" class="list-group-item link-light">Sell on AmazonAI</a>
+                    <a href="#" class="list-group-item link-light">Protect and build your Brand</a>
+                    <a href="#" class="list-group-item link-light">Become an Affliate</a>
+                    <a href="#" class="list-group-item link-light">Advertise your Products</a>
+                </div>
+                <div class="col">
+                    <h6 class="py-1">Let us help you</h6>
+                    <a href="#" class="list-group-item link-light">Your Account</a>
+                    <a href="#" class="list-group-item link-light">Return Center</a>
+                    <a href="#" class="list-group-item link-light">100% Purchase Protection</a>
+                    <a href="#" class="list-group-item link-light">Help</a>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <div class="bg-dark-4 py-4 text-secondary mt-4">
+            <div class="text-center">
+                <a href="#" class="link-secondary p-2">Conditions of Use & Sale</a>
+                <a href="#" class="link-secondary p-2">Privacy Notice</a>
+                <a href="#" class="link-secondary p-2">Interest-Based Ads</a>
+            </div>
+            <div class="text-center py-2 ">
+                <p>&copy; All Rights Reserved 2023. AmazonAI or it's affliates</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Option 1: CoreUI for Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.2.0/dist/js/coreui.bundle.min.js"
+        integrity="sha384-n0qOYeB4ohUPebL1M9qb/hfYkTp4lvnZM6U6phkRofqsMzK29IdkBJPegsyfj/r4" crossorigin="anonymous">
+        </script>
+
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
